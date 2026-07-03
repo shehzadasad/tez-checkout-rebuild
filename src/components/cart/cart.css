@@ -1,0 +1,185 @@
+/* @import url("https://fonts.cdnfonts.com/css/sf-pro-display"); */
+/* .seller {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #888888;
+  display: flex;
+  line-height: 14px;
+} */
+/* .sss {
+  margin-top: 3px;
+  margin-left: 4px;
+} */
+/* .brandLogo {
+  display: flex;
+  justify-content: space-between;
+} */
+/* .itemDetail {
+  width: 100%;
+  margin-left: 8px;
+} */
+
+/* .itemImage {
+  border-radius: 5px;
+} */
+
+/* .itemName {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #111111;
+} */
+/* .itemPrice {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #888888;
+} */
+/* .productRow {
+  display: flex;
+} */
+
+/* .quantityRow {
+  display: flex;
+  justify-content: space-between;
+} */
+/* 
+.counterMinus {
+  border-radius: 50%;
+  background: #111111;
+  color: #ffffff;
+  padding-bottom: 3px;
+  display: flex;
+  align-items: center;
+  width: 16.67px;
+  height: 16.67px;
+  justify-content: center;
+} */
+
+/* .counterPlus {
+  border-radius: 50%;
+  background: #111111;
+  color: #ffffff;
+  padding-bottom: 3px;
+  display: flex;
+  align-items: center;
+  width: 16.67px;
+  height: 16.67px;
+  justify-content: center;
+} */
+
+/* .counter {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  /* width: 15%; */
+/* padding: 0 11px;
+  align-items: center;
+  height: 30px; */
+/* }  */
+
+/* .delete {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 35px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .deliveryheading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+
+  color: #888888;
+} */
+/* .delivery {
+  display: flex;
+  justify-content: space-between;
+} */
+
+/* .delivery1 {
+  display: flex;
+} */
+/* .shipping {
+  margin-left: 18px;
+} */
+
+/* .shippingName {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #111111;
+} */
+/* 
+.shippingTime {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #888888;
+} */
+
+/* .coupon {
+  display: flex;
+} */
+
+/* .couponText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #e72e80;
+
+  margin-left: 8px;
+} */
+.cartHeading {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+  /* margin: 0 17px; */
+}
+.loadLoader-arrow{
+  rotate: 180deg;
+}
+/* .promoCode {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promoText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #80ba37;
+} */
+/* .haveQuestions {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #888888;
+} */
+/* .refPolicy {
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 20px;
+} */

@@ -1,0 +1,70 @@
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap'); */
+.wentwrong-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.click-checkout {
+  margin-top: 24px; 
+  width: 163.22px;
+  height: 35px;
+
+}
+
+.tryAgain {
+  font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 18px;
+color: #374151;
+margin-top: 91px;
+}
+
+.wentWrong {
+  font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+letter-spacing: 0.01em;
+color: #6B7280;
+margin-top: 15px;
+}
+.wrong-image {
+  margin-top: 25px;
+}
+
+.text {
+  width: 253px;
+height: 63px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+text-align: center;
+letter-spacing: 0.01em;
+margin-top: 25px;
+
+/* gray/500 */
+
+color: #6B7280;
+}
+
+.button {
+  width: 200px;
+  height: 45px;
+  background: #E93A7D;
+  border-radius: 5px;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 80px;
+}

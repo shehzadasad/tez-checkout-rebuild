@@ -1,0 +1,331 @@
+/* @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"); */
+
+/* signup */
+
+.user-input-card- {
+  background: #ffffff !important;
+  border: 1px solid #d1d5db !important;
+  box-sizing: border-box !important;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.02) !important;
+  border-radius: 5px !important;
+}
+.user-input-card-nift {
+  background: #ffffff !important;
+  border-bottom: 1px solid #d1d5db !important;
+  box-sizing: border-box !important;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.02) !important;
+  border-radius: 5px !important;
+}
+.MuiAutocomplete-hasPopupIcon.css-1h51icj-MuiAutocomplete-root .MuiFilledInput-root{
+  background-color: white;
+}
+.css-1tzgnuz-MuiInputBase-root-MuiFilledInput-root {
+  padding-top: 13px !important;
+}
+.MuiFilledInput-root {
+  background-color: white;
+}
+.user-input-card-:before {
+  border-bottom: none !important;
+}
+.user-input-card-:after {
+  border-bottom: none !important;
+}
+
+.fieldsAccountDetails .user-input-card- {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.h-50 {
+  height: 50px !important;
+}
+.sm-text {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #4e5b68;
+}
+
+.single-input-card2 {
+  background-color: white !important;
+  border: 1px solid transparent;
+  border-radius: 10px !important;
+  padding-left: 50px !important;
+  border: 1px solid #d1d5db;
+  font-family: "DM Sans", sans-serif;
+}
+/* .single-input-card2:before {
+    border-bottom: none !important;
+  }
+  .single-input-card2:after {
+    border-bottom: none !important;
+  } */
+
+.outline-color-base2 {
+  outline-color: #e72e80 !important;
+}
+.border-bottom-only {
+  border-bottom: 1px solid #d1d5db !important;
+}
+
+.main-text {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #374151;
+}
+.text-20 {
+  font-size: 20px;
+}
+.input-number-div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+
+.blue-text {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: start !important;
+  padding: 0;
+  margin: 0;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  /* Actionable Item */
+
+  color: #18a0fb;
+}
+
+.privacy-text {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #4e5b68;
+}
+
+#inline-radio-2 {
+  /* background-color: #e72e814b; */
+  box-shadow: none;
+  border-color: grey;
+  margin-right: 10px !important;
+}
+.form-check-input:checked {
+  background-color: #e72e814b !important;
+  border-color: white !important;
+}
+
+.form-check-input:checked[type="checkbox"] {
+  background-blend-mode: color-dodge;
+}
+.no-border-radius {
+  border-radius: 0px !important;
+}
+
+.item-cart {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.quantity-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
+  border-radius: 3px;
+  width: 82px;
+  height: 28px;
+  /* background-color: #E5E7EB; */
+}
+.quantity-input:focus {
+  background: red;
+}
+
+.quantity-input__modifier,
+.quantity-input__screen {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+}
+
+.quantity-input__modifier {
+  /* padding: 0.7rem; */
+  /* width: 3rem; */
+  font-size: 16px;
+  /* background: #E5E7EB; */
+  color: #888;
+  background-color: transparent !important;
+
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  /* text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6); */
+  cursor: pointer;
+}
+.quantity-input__modifier:hover {
+  /* background: #E5E7EB; */
+  color: #555555;
+}
+.quantity-input__modifier--left {
+  /* border-radius: 3px 0 0 3px; */
+}
+.quantity-input__modifier--right {
+  /* border-radius: 0 3px 3px 0; */
+}
+
+.quantity-input__screen {
+  width: 35px;
+  /* padding: 0.7rem; */
+  font-size: 16px;
+  border: 0;
+  border-top: 0 solid #e5e7eb;
+  border-bottom: 0 solid #e5e7eb;
+  /* background-color: #E5E7EB; */
+
+  text-align: center;
+  /* height: 28px; */
+}
+
+.price-text {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.item-text {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  /* gray/800 */
+
+  color: #1f2937;
+  /* color: #000000; */
+}
+.order-text2 {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #4e5b68;
+}
+
+.order-text-total {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500 !important;
+}
+
+.order-text-total-text {
+  color: #4e5b68;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.order-text-final-total {
+  font-size: 24px;
+  color: #000000;
+  font-weight: 500 !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+.Otp-Fields-New {
+  height: 60px !important;
+  width: 60px !important;
+  border-radius: 10px;
+  /* border-color: rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  font-size: 22px !important;
+  /* margin-left: 10px; */
+  margin-right: 10px;
+  border: 1px solid #d1d5db;
+}
+.Otp-Fields-New:focus {
+  outline: none;
+  border-color: #e72e817a !important;
+  box-shadow: 0 0px 0px 0.25rem #e72e8128 !important;
+  /* outline: 0 none !important; */
+}
+
+@media (max-width: 426px) {
+  .Otp-Fields-New {
+    height: 50px !important;
+    width: 50px !important;
+  }
+}
+
+.marginOnTimer {
+  margin-left: 4px;
+  font-size: 14px;
+}
+
+.otpBody {
+  font-family: "DM Sans", sans-serif;
+}
+
+.basic-btn-new {
+  border-radius: 5px !important;
+  margin: unset !important;
+  margin-top: 40px;
+  width: 140px !important;
+  padding: 12px;
+  background-color: #e82e81;
+  color: #fff;
+  border: none;
+  width: 100% !important;
+  font-size: 20px;
+}
+
+.editIcon {
+  cursor: pointer;
+}
+
+.howitworks {
+  cursor: pointer;
+}
+
+@media (min-width: 494px) {
+  .quantity-price-con {
+    margin-left: -40px;
+  }
+  .price-con {
+    float: right;
+    margin-right: -45px;
+  }
+}
+
+.price-con {
+  float: right;
+}

@@ -1,0 +1,4 @@
+export enum EEventName {
+  MISSED_APMS = "MISSED_APMS",
+  CHECKOUT_STARTED = "CHECKOUT_STARTED",
+}

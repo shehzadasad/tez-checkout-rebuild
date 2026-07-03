@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      bootstrap cdn
+    -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!--
+      segment.com cdn and configuration for analytics
+    -->
+    <!-- <script type="text/javascript">
+      var _kmq = _kmq || [];
+      var _kmk = _kmk || "a300b672447460924915ba8db3ab87cc629ead5a";
+      function _kms(u) {
+        setTimeout(function () {
+          var d = document,
+            f = d.getElementsByTagName("script")[0],
+            s = d.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = u;
+          f.parentNode.insertBefore(s, f);
+        }, 1);
+      }
+      _kms("//i.kissmetrics.io/i.js");
+      _kms("//scripts.kissmetrics.io/" + _kmk + ".2.js");
+    </script> -->
+
+    <!-- <script>
+      !(function () {
+        var analytics = (window.analytics = window.analytics || []);
+        if (!analytics.initialize)
+          if (analytics.invoked)
+            window.console &&
+              console.error &&
+              console.error("Segment snippet included twice.");
+          else {
+            analytics.invoked = !0;
+            analytics.methods = [
+              "trackSubmit",
+              "trackClick",
+              "trackLink",
+              "trackForm",
+              "pageview",
+              "identify",
+              "reset",
+              "group",
+              "track",
+              "ready",
+              "alias",
+              "debug",
+              "page",
+              "once",
+              "off",
+              "on",
+              "addSourceMiddleware",
+              "addIntegrationMiddleware",
+              "setAnonymousId",
+              "addDestinationMiddleware",
+            ];
+            analytics.factory = function (e) {
+              return function () {
+                var t = Array.prototype.slice.call(arguments);
+                t.unshift(e);
+                analytics.push(t);
+                return analytics;
+              };
+            };
+            for (var e = 0; e < analytics.methods.length; e++) {
+              var key = analytics.methods[e];
+              analytics[key] = analytics.factory(key);
+            }
+            analytics.load = function (key, e) {
+              var t = document.createElement("script");
+              t.type = "text/javascript";
+              t.async = !0;
+              t.src =
+                "https://cdn.segment.com/analytics.js/v1/" +
+                key +
+                "/analytics.min.js";
+              var n = document.getElementsByTagName("script")[0];
+              n.parentNode.insertBefore(t, n);
+              analytics._loadOptions = e;
+            };
+            analytics._writeKey = "eh6urakpYLuHVsuTWIWVJv4vsOhA6tRX";
+            analytics.SNIPPET_VERSION = "4.15.3";
+            analytics.load("eh6urakpYLuHVsuTWIWVJv4vsOhA6tRX");
+            analytics.page();
+          }
+      })();
+    </script> -->
+
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+    <!-- Start VWO Async SmartCode -->
+    <!-- <script type="text/javascript">
+      window._vwo_code =
+        window._vwo_code ||
+        (function () {
+          var account_id = 624630,
+            settings_tolerance = 2000,
+            library_tolerance = 2500,
+            use_existing_jquery = false,
+            is_spa = 1,
+            hide_element = 'body',
+            /* DO NOT EDIT BELOW THIS LINE */
+            f = false,
+            d = document,
+            code = {
+              use_existing_jquery: function () {
+                return use_existing_jquery
+              },
+              library_tolerance: function () {
+                return library_tolerance
+              },
+              finish: function () {
+                if (!f) {
+                  f = true
+                  var a = d.getElementById('_vis_opt_path_hides')
+                  if (a) a.parentNode.removeChild(a)
+                }
+              },
+              finished: function () {
+                return f
+              },
+              load: function (a) {
+                var b = d.createElement('script')
+                b.src = a
+                b.type = 'text/javascript'
+                b.innerText
+                b.onerror = function () {
+                  _vwo_code.finish()
+                }
+                d.getElementsByTagName('head')[0].appendChild(b)
+              },
+              init: function () {
+                window.settings_timer = setTimeout(function () {
+                  _vwo_code.finish()
+                }, settings_tolerance)
+                var a = d.createElement('style'),
+                  b = hide_element
+                    ? hide_element +
+                      '{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}'
+                    : '',
+                  h = d.getElementsByTagName('head')[0]
+                a.setAttribute('id', '_vis_opt_path_hides')
+                a.setAttribute('type', 'text/css')
+                if (a.styleSheet) a.styleSheet.cssText = b
+                else a.appendChild(d.createTextNode(b))
+                h.appendChild(a)
+                this.load(
+                  'https://dev.visualwebsiteoptimizer.com/j.php?a=' +
+                    account_id +
+                    '&u=' +
+                    encodeURIComponent(d.URL) +
+                    '&f=' +
+                    +is_spa +
+                    '&r=' +
+                    Math.random(),
+                )
+                return settings_timer
+              },
+            }
+          window._vwo_settings_timer = code.init()
+          return code
+        })()
+    </script> -->
+    <!-- End VWO Async SmartCode -->
+
+    <!-- <script src="https://checkout-sandbox.ritidentity.com/checkout.js"></script> -->
+    <!-- <script
+      async
+      defer
+      type="text/javascript"
+      src="https://test-bankalfalah.gateway.mastercard.com/checkout/version/54/checkout.js"
+      data-complete="https://stage.apis.qisstpay.com/order-service/call_back?payment_gateway=alfalah"
+    ></script> -->
+    <!-- data-error="errorCallback"
+      data-cancel="cancelCallback"
+      data-complete="completeCallback"
+      data-beforeRedirect="getPageState"
+      data-afterRedirect="restorePageState"
+      data-timeout="timeoutCallback" -->
+    <!-- Full story script -->
+
+    <!-- <script>
+  window['_fs_is_outer_script'] = true;
+  window['_fs_debug'] = false;
+  window['_fs_host'] = 'fullstory.com';
+  window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+  window['_fs_org'] = 'o-19VY88-na1';
+  window['_fs_namespace'] = 'FS';
+</script> -->
+
+    <!-- Full story script -->
+
+    <!-- <script type="text/javascript">
+    (function(n,e,u,r,o,i,d){
+         n.nid=n.nid||function(){(n.nid.q=n.nid.q||[]).push(arguments)};
+         o=e.createElement(u);i=e.getElementsByTagName(u)[0];o.async=1;
+         o.src=r;i.parentNode.insertBefore(o,i);
+    })(window,document,'script','//scripts.neuro-id.com/c/nid-pzhkhQt4-1.1350.2c777b7.js');
+  </script> -->
+    <link rel="preconnect" href="https://apis.qisstpay.com" />
+    <link
+      rel="dns-prefetch"
+      href="https://qisstpayanpv.dataplane.rudderstack.com"
+    />
+    <title>QisstPay BNPL</title>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <!--
+      google map apis
+    -->
+    <script
+      async
+      defer
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY&libraries=places"
+    ></script>
+
+    <!--
+      utilities functions 
+    -->
+
+    <script src="./utils.js" defer></script>
+
+    <!-- RUDDER STACK SCRIPT  -->
+    <script type="text/javascript">
+      // Check if the URL contains "localhost"
+      // if (window.location.href.indexOf('localhost') === -1) { //   remove this to use track rudderstack events in localhost 
+        !(function () {
+          
+          var e = (window.rudderanalytics = window.rudderanalytics || []);
+          //  if (window.shouldTrack) {
+          e.methods = [
+            "load",
+            "page",
+            "track",
+            "identify",
+            "alias",
+            "group",
+            "ready",
+            "reset",
+            "getAnonymousId",
+            "setAnonymousId",
+            "getUserId",
+            "getUserTraits",
+            "getGroupId",
+            "getGroupTraits",
+          ];
+        // }else{
+        //   e.methods = [
+        //     // "load",
+        //     // "page",
+        //     // "track",
+        //     // "identify",
+        //     // "alias",
+        //     // "group",
+        //     // "ready",
+        //     // "reset",
+        //     // "getAnonymousId",
+        //     // "setAnonymousId",
+        //     // "getUserId",
+        //     // "getUserTraits",
+        //     // "getGroupId",
+        //     // "getGroupTraits",
+        //   ];
+        // }
+          e.factory = function (t) {
+            return function () {
+              var r = Array.prototype.slice.call(arguments);
+              r.unshift(t);
+              e.push(r);
+              return e;
+            };
+          };
+  
+          for (var t = 0; t < e.methods.length; t++) {
+            var r = e.methods[t];
+            e[r] = e.factory(r);
+          }
+  
+          e.loadJS = function (e, t) {
+            var r = document.createElement("script");
+            r.type = "text/javascript";
+            r.async = !0;
+            r.src = "https://cdn.rudderlabs.com/v1.1/rudder-analytics.min.js";
+            var a = document.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(r, a);
+          };
+  
+          e.loadJS();
+          e.load(
+            "2UtndoC2VnTwYcFlT1y5pO0ZaJs",
+            "https://qisstpayanpv.dataplane.rudderstack.com"
+          );
+          // e.page();
+        })();
+      // } //   remove this to use track rudderstack events in localhost 
+    </script>
+    <!--  affirm configurations for production
+    -->
+    <!-- <script>
+      _affirm_config = {
+        public_api_key: "FANDBG19VE5O5WGL",
+        script: "https://cdn1.affirm.com/js/v2/affirm.js",
+      };
+      (function (m, g, n, d, a, e, h, c) {
+        var b = m[n] || {},
+          k = document.createElement(e),
+          p = document.getElementsByTagName(e)[0],
+          l = function (a, b, c) {
+            return function () {
+              a[b]._.push([c, arguments]);
+            };
+          };
+        b[d] = l(b, d, "set");
+        var f = b[d];
+        b[a] = {};
+        b[a]._ = [];
+        f._ = [];
+        b._ = [];
+        b[a][h] = l(b, a, h);
+        b[c] = function () {
+          b._.push([h, arguments]);
+        };
+        a = 0;
+        for (
+          c =
+            "set add save post open empty reset on off trigger ready setProduct".split(
+              " "
+            );
+          a < c.length;
+          a++
+        )
+          f[c[a]] = l(b, d, c[a]);
+        a = 0;
+        for (c = ["get", "token", "url", "items"]; a < c.length; a++)
+          f[c[a]] = function () {};
+        k.async = !0;
+        k.src = g[e];
+        p.parentNode.insertBefore(k, p);
+        delete g[e];
+        f(g);
+        m[n] = b;
+      })(
+        window,
+        _affirm_config,
+        "affirm",
+        "checkout",
+        "ui",
+        "script",
+        "ready",
+        "jsReady"
+      );
+    </script> -->
+
+    <!--
+        Uplift script (with hard code upc)
+      -->
+
+    <!--<script>
+      (function (u, p, l, i, f, t, o, b, j) {
+        u["UpLiftPlatformObject"] = f;
+        (u[f] =
+          u[f] ||
+          function () {
+            (u[f].q = u[f].q || []).push(arguments);
+          }),
+          (u[f].l = 1 * new Date());
+        (b = p.createElement(l)), (j = p.getElementsByTagName(l)[0]);
+        b.async = 1;
+        b.src = i + "?id=" + t;
+        j.parentNode.insertBefore(b, j);
+        o = u.location.host.match(/[\w-]+\.\w{2,3}(:\d+)?$/);
+        if (o) o = o[0];
+        u[f]("create", t, o);
+      })(
+        window,
+        document,
+        "script",
+        "https://cdn.uplift-platform.com/a/up.js",
+        "up",
+        "UP-76781355-1"
+      );
+    </script>-->
+
+    <!-- Hot jar Tracking Code for https://ms.tezcheckout.qisstpay.com -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3804933, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </body>
+</html>

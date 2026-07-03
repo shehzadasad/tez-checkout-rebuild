@@ -1,0 +1,249 @@
+.textdecordiv {
+   
+    padding-bottom: 15px;
+    padding-left: 27px;
+    padding-right: 23px;
+    text-align: center;
+    padding-top: 26px;
+}
+
+ .textdecore 
+{
+  font-family:DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: left;
+  padding-top:8px;
+  letter-spacing:0.01em;
+  
+}
+.textdecore1
+{
+    font-family:DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+
+    letter-spacing:0.01em;
+  }
+
+.crossBtn1
+{
+    right: 14px;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 9px;
+    
+}
+
+.crossBtnfinish
+{
+    right: 14px;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+
+ .radiomaindiv 
+ {
+   
+
+      padding-left:21px;
+      padding-right:21px;
+      margin-top:32px
+ }
+
+
+
+
+ .radiomaindiv1
+ {
+    height:47px;
+     border:solid;
+    border-radius:4px;
+    border-color:#D4D4D4;
+     margin-bottom:12px;
+     padding-top: 6px;
+     padding-left: 14px;
+ 
+ }
+
+
+
+ .radiomaindiv3
+ {
+    height:40px;
+     border:solid;
+    border-radius:4px;
+    border-color:#D4D4D4;
+     margin-bottom:12px;
+     padding-top: 6px;
+     padding-left: 14px;
+ }
+
+ .checkedradiomaindiv1
+ 
+ {
+    height:47px;
+     border:solid;
+    border-radius:4px;
+    border-color:#868686;
+     margin-bottom:12px;
+     padding-top: 6px;
+     padding-left: 14px;
+ }
+
+
+
+
+ .checkedradiomaindiv2
+ 
+ {
+    height:87px;
+     border:solid;
+    border-radius:4px;
+    border-color:#868686;
+     margin-bottom:12px;
+     padding-top: 6px;
+     padding-left: 14px;
+     padding-right: 14px;
+    
+ }
+
+ .errmsg
+ 
+ {
+    height:87px;
+     border:solid;
+    border-radius:4px;
+    border-color:#d81313;
+     margin-bottom:12px;
+     padding-top: 6px;
+     padding-left: 14px;
+     padding-right: 14px;
+    
+ }
+
+ .radiotextt{
+
+    color: #000000CC
+
+ }
+
+
+ .submitButton 
+{
+   padding-top: 12px;
+   padding-bottom: 12px;
+   padding-left: 65px;
+   padding-right: 65px;
+}
+
+
+.finishsurveymaindiv
+{
+    padding-top: 13px;
+    padding-left: 22px;
+    padding-right: 22px;
+    /* text-align: center; */
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+
+
+.closebutton 
+{
+    border-radius: 5px !important;
+    /* margin: unset !important; */
+    width: 140px !important;
+    padding: 12px;
+    background-color: #e82e81;
+    color: #fff;
+    border: none;
+    width: 100% !important;
+    font-size: 20px;
+    margin-top: 53px;
+    margin-bottom: 50px;
+}
+
+.inputtextdecor 
+{
+font-family: 'DM Sans';
+font-style: italic;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.01em;
+color: #000000B2 !important;  
+padding: 0px !important;
+border: 0;
+border-bottom: 1px solid grey;
+border-radius: 0px !important;
+width: 100% !important;
+line-height: 200%;
+
+}
+
+.errinputtextdecor 
+{
+font-family: 'DM Sans';
+font-style: italic;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.01em;
+color: #000000B2 !important;   
+padding: 0px !important;
+border: 0;
+border-bottom: 1px solid #d81313;
+border-radius: 0px !important;
+width: 100% !important;
+line-height: 200%;
+
+}
+
+#filled-basic-card-new{
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #e82e81 !important;
+    padding: 0px !important;
+    border-bottom: 1px solid grey;
+    border-radius: 0px !important;
+    width: 100% !important;
+    background-color: transparent !important;  
+}
+
+
+.phonenumberinput
+{
+    border: none;
+    background-color: white;
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+
+color: #1F2937;
+}

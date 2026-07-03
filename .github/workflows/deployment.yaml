@@ -1,0 +1,76 @@
+---
+name: Node.js type
+on:
+  push:
+    branches:
+      - main-live
+env:
+  REACT_APP_ABANDONED_CART_URL: ${{ secrets.REACT_APP_ABANDONED_CART_URL }}
+  REACT_APP_API_KEY: ${{secrets.REACT_APP_API_KEY}}
+  REACT_APP_API_URL: ${{secrets.REACT_APP_API_URL}}
+  REACT_APP_AUTHENTICATION_MS_API_KEY: ${{secrets.REACT_APP_AUTHENTICATION_MS_API_KEY}}
+  REACT_APP_CUSTOMER_MS_API_KEY: ${{secrets.REACT_APP_CUSTOMER_MS_API_KEY}}
+  REACT_APP_GET_USER_CARD: ${{ secrets.REACT_APP_GET_USER_CARD }}
+  REACT_APP_GET_WALLET_BALANCE: ${{secrets.REACT_APP_GET_WALLET_BALANCE}}
+  REACT_APP_MERCHANT_SCRIPTS_API_KEY: ${{secrets.REACT_APP_MERCHANT_SCRIPTS_API_KEY}}
+  REACT_APP_ORDER_MS_API_KEY: ${{secrets.REACT_APP_ORDER_MS_API_KEY}}
+  REACT_APP_SKYFLOW_URL: ${{secrets.REACT_APP_SKYFLOW_URL}}
+  REACT_APP_SKYFLOW_VAULT_ID: ${{secrets.REACT_APP_SKYFLOW_VAULT_ID}}
+  REACT_APP_SKYFLOW_VAULT_URL: ${{secrets.REACT_APP_SKYFLOW_VAULT_URL}}
+  REACT_APP_SQUARE_APP_ID: ${{ secrets.REACT_APP_SQUARE_APP_ID }}
+  REACT_APP_SQUARE_LOCATION_ID: ${{secrets.REACT_APP_SQUARE_LOCATION_ID}}
+  REACT_APP_WEB_EXTERNAL_MS_API_KEY: ${{secrets.REACT_APP_WEB_EXTERNAL_MS_API_KEY}}
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cache node modules
+        id: cache-npm
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules
+        with:
+          # npm cache files are stored in `~/.npm` on Linux/macOS
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
+        name: List the state of node modules
+        continue-on-error: true
+        run: npm list
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - name: Install dependencies
+        run: |
+          npm cache clean --force
+          npm i -f
+#          npm install -f  --save-dev @babel/plugin-proposal-private-property-in-object
+#          npm install -f --save-dev @babel/preset-typescript
+      - name: Build application
+        run: CI='' npm run build
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }}
+      - id: 'upload-files'
+        uses: google-github-actions/upload-cloud-storage@v1
+        with:
+          path: 'build'
+          destination: 'tezcheckout'
+          parent: false
+
+ #     - name: Upload to Google Cloud Storage
+ #       run: |
+ #         gsutil -m rsync -d -c -r build/ gs://tezcheckout
+
+
+
+#checking caching speed

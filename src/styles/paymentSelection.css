@@ -1,0 +1,71 @@
+.shipping-address-container {
+  /* width: 300px; */
+  /* height: 122px; */
+  background: #ffffff;
+  /* gray/300 */
+
+  border: 1px solid #d1d5db;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.securecheckout {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding-top: 6px;
+}
+
+.methods-container {
+  background: #ffffff;
+  /* gray/300 */
+
+  border: 1px solid #d1d5db;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.shipping {
+  display: flex;
+}
+.shippingText {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  /* gray/700 */
+
+  color: #374151;
+}
+
+.sm-shipping {
+  padding-left: 34px;
+  padding-top: 2px;
+  font-size: 12px !important;
+}
+.shipping-icon {
+  padding-right: 8px;
+}
+.self-align-center {
+  align-self: center;
+}
+
+.input-card {
+  background-color: white !important;
+  /* border-bottom: 1px solid transparent; */
+  border-radius: 10px !important;
+  padding-left: 0px !important;
+}
+.input-card:before {
+  /* border-bottom: none !important; */
+}
+.input-card:after {
+  /* border-bottom: none !important; */
+}
+.fieldsAccountDetails .input-card {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+#filled-basic-card {
+  padding-top: 10px;
+}

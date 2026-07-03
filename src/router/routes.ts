@@ -1,0 +1,16 @@
+export const routes = {
+  phonePage: "/",
+  phoneOtpPage: "/phone-otp",
+  paymentSelectionPage: "/payment-selection",
+  userDetailPage: "/user-detail",
+  emailOtpPage: "/email-otp",
+  paymentDetailPage: "/payment-detail",
+  paymentSuccessPage: "/success",
+  paymentFailurePage: "/failure",
+  cardDetailsPage: "/card-detail",
+  orderReview: "/order/review",
+  orderCancel: "/order/cancel",
+  editAddress: "/user/edit-address",
+  upsell: "/user/upsell",
+  redirect: "/redirect",
+};
